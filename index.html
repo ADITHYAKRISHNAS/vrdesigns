@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Adithya Krisha S" />
+    <meta
+      name="description"
+      content="VR DESIGNS is a premier website dedicated to providing customer satisfaction in custom clothing design and creation. Our platform offers a seamless and intuitive experience for clients to design, customize, and order bespoke clothing, ensuring the highest quality and user experience."
+    />
+    <meta
+      name="keywords"
+      content="VR DESIGNS, custom clothing, bespoke clothing, clothing design, customer satisfaction, online clothing design, clothing customization"
+    />
+    <title>VR Designs</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/logo.png"
+    />
+    <script src="js/source.js" defer></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="assets/icons/logo.png" alt="logo_image" />
+        </a>
+      </div>
+      <ul id="menuList">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonal">Testimonal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger-menu menu-icon">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span onclick="toggleMenu()"></span>
+        </label>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- home -->
+    <header class="section__container header__container header" id="home">
+      <!-- <h2>Vr Designs</h2> -->
+      <h1>
+        Create, Customize &<br />Wear Your
+        <span class="changing-text" id="changing-text">Dream Outfit</span>
+      </h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea expedita
+        dolore omnis consequuntur dolores illum quaerat facilis.
+      </p>
+
+      <main>
+        <div class="slider">
+          <div class="list">
+            <div class="item" style="--position: 1">
+              <img src="assets/images/image1.png" alt="" />
+            </div>
+            <div class="item" style="--position: 2">
+              <img src="assets/images/image2.png" alt="" />
+            </div>
+            <div class="item" style="--position: 3">
+              <img src="assets/images/image3.png" alt="" />
+            </div>
+            <div class="item" style="--position: 4">
+              <img src="assets/images/image4.png" alt="" />
+            </div>
+            <div class="item" style="--position: 5">
+              <img src="assets/images/image5.png" alt="" />
+            </div>
+            <div class="item" style="--position: 6">
+              <img src="assets/images/image6.png" alt="" />
+            </div>
+            <div class="item" style="--position: 7">
+              <img src="assets/images/image7.png" alt="" />
+            </div>
+            <div class="item" style="--position: 8">
+              <img src="assets/images/image8.png" alt="" />
+            </div>
+            <div class="item" style="--position: 9">
+              <img src="assets/images/image9.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <h2 class="explore__card_h2" data-target="35">0+</h2>
+          <p class="explore__card_p">Lorem, ipsum.</p>
+        </div>
+        <div class="explore__card">
+          <h2 class="explore__card_h2" data-target="16">0+</h2>
+          <p class="explore__card_p">Lorem, ipsum.</p>
+        </div>
+        <div class="explore__card">
+          <h2 class="explore__card_h2" data-target="24">0+</h2>
+          <p class="explore__card_p">Lorem, ipsum.</p>
+        </div>
+        <div class="explore__card">
+          <h2 class="explore__card_h2" data-target="30">0+</h2>
+          <p class="explore__card_p">Lorem, ipsum.</p>
+        </div>
+      </div>
+    </header>
+    <!-- home -->
+
+    <!-- product -->
+
+    <section id="product" class="section__container header__container product">
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <article class="product_article">
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <div class="carousel">
+            <img src="assets/images/image1.png" alt="img" draggable="true" />
+            <img src="assets/images/image2.png" alt="img" draggable="true" />
+            <img src="assets/images/image3.png" alt="img" draggable="true" />
+            <img src="assets/images/image4.png" alt="img" draggable="true" />
+            <img src="assets/images/image5.png" alt="img" draggable="true" />
+            <img src="assets/images/image6.png" alt="img" draggable="true" />
+            <img src="assets/images/image7.png" alt="img" draggable="true" />
+            <img src="assets/images/image8.png" alt="img" draggable="true" />
+            <img src="assets/images/image9.png" alt="img" draggable="true" />
+          </div>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </article>
+      <h2>
+        <button onclick="redirectToGallery()" class="btn main_btn">
+          Explore Gallary
+        </button>
+      </h2>
+    </section>
+    <!-- product -->
+    <!-- about -->
+    <div id="about" class="about__container">
+      <div class="about__content">
+        <h2 class="abouth2">Lorem ipsum dolor sit amet.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p class="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          repellendus deserunt vitae iusto exercitationem nulla earum provident
+          porro ipsam eaque.
+        </p>
+        <p class="p2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          repellendus deserunt vitae iusto exercitationem nulla earum provident
+          porro ipsam eaque.
+        </p>
+        <p class="p3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          repellendus deserunt vitae iusto exercitationem nulla earum provident
+          porro ipsam eaque.
+        </p>
+        <h2 id="about2h2">
+          <button onclick="redirectToAbout()" class="btn main_btn">
+            Read More
+          </button>
+        </h2>
+      </div>
+      <div class="slick-carousel about__image">
+        <div><img src="assets/images/image1.png" /></div>
+        <div><img src="assets/images/image2.png" /></div>
+        <div><img src="assets/images/image3.png" /></div>
+        <div><img src="assets/images/image4.png" /></div>
+        <div><img src="assets/images/image5.png" /></div>
+        <div><img src="assets/images/image6.png" /></div>
+        <div><img src="assets/images/image7.png" /></div>
+        <div><img src="assets/images/image8.png" /></div>
+        <div><img src="assets/images/image9.png" /></div>
+      </div>
+    </div>
+    <!-- about -->
+
+    <!-- testimonal -->
+
+    <section
+      id="testimonal"
+      class="section__container header__container testimonal"
+    >
+      <h2 class="hh2">Lorem ipsum dolor sit amet.</h2>
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <div class="cody">
+        <div class="thewrapper">
+          <i
+            id="left"
+            style="color: blueviolet"
+            class="fa-solid fa-angle-left"
+          ></i>
+          <ul class="thecarousel">
+            <li class="card" data-insta="https://www.instagram.com/owner1">
+              <div class="img">
+                <img
+                  src="assets/images/image1.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner2">
+              <div class="img">
+                <img
+                  src="assets/images/image2.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner3">
+              <div class="img">
+                <img
+                  src="assets/images/image3.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner4">
+              <div class="img">
+                <img
+                  src="assets/images/image4.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner5">
+              <div class="img">
+                <img
+                  src="assets/images/image5.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner6">
+              <div class="img">
+                <img
+                  src="assets/images/image6.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner7">
+              <div class="img">
+                <img
+                  src="assets/images/image7.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner8">
+              <div class="img">
+                <img
+                  src="assets/images/image8.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+            <li class="card" data-insta="https://www.instagram.com/owner9">
+              <div class="img">
+                <img
+                  src="assets/images/image9.png"
+                  alt="img"
+                  draggable="true"
+                />
+              </div>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                dicta?
+              </p>
+            </li>
+          </ul>
+          <i
+            id="right"
+            style="color: blueviolet"
+            class="fa-solid fa-angle-right"
+          ></i>
+        </div>
+      </div>
+    </section>
+    <!-- testimonal -->
+    <!-- contact -->
+
+    <section
+      class="contactbook header__container contact__container"
+      id="contact"
+    >
+      <div class="thecenterer">
+        <div class="concontainer">
+          <div class="conwrapper">
+            <img src="assets/images/image1.png" />
+            <img src="assets/images/image2.png" />
+            <img src="assets/images/image3.png" />
+            <img src="assets/images/image4.png" />
+            <img src="assets/images/image5.png" />
+            <img src="assets/images/image6.png" />
+            <img src="assets/images/image7.png" />
+          </div>
+        </div>
+      </div>
+      <div class="contact__content">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+
+        <p class="section__subheader">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          suscipit fuga facilis sapiente ad! Corporis porro perspiciatis sed
+          amet labore!
+        </p>
+
+        <form onsubmit="handleSubmit(event)">
+          <input type="text" name="First Name" placeholder="Your Name" required />
+          <div class="form__group">
+            <input type="tel" name="Phone Number" placeholder="Phone Number" />
+            <input type="email" name="email" placeholder="Email Address" required />
+          </div>
+          <textarea
+            cols="30"
+            rows="5"
+            type="text"
+            name="message"
+            placeholder="Write your message here ..."
+            required
+          ></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      
+      
+        
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <!-- footer -->
+
+    <footer>
+      <a
+        class="whats-app"
+        href="https://api.whatsapp.com/send/?phone=918921169467&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+      <div class="footerContainer">
+        <div class="logo-contact">
+          <h2><a href="#">Vr Designs </a></h2>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonal">Testimonal</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="socialIcons">
+          <a href=""
+            ><i class="facebook"
+              ><img src="assets/svg/facebook-svgrepo-com.svg" alt="" /> </i
+          ></a>
+          <a href=""
+            ><i class="instagram">
+              <img src="assets/svg/instagram-svgrepo-com.svg" alt="" /></i
+          ></a>
+          <a href=""
+            ><i class="twitter"
+              ><img src="assets/svg/twitter-svgrepo-com.svg" alt="" /></i
+          ></a>
+          <!-- <a href=""><i class="google-plus"><img src="asset/svg/google-plus-svgrepo-com.svg" alt=""></i></a> -->
+          <a href=""
+            ><i class="youtube"
+              ><img src="assets/svg/youtube-svgrepo-com.svg" alt="" /></i
+          ></a>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          Copyright &copy;
+          <span id="current-year"></span>
+          <span class="designer">VR Designs.</span> All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
